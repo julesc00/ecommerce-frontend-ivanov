@@ -61,10 +61,16 @@ const ProductScreen = ({ match }) => {
               </ListGroup.Item>
 
               <ListGroup.Item style={{display: "flex", justifyContent: "space-evenly"}}>
-                <Button className="btn-block" type="button" style={{ width: "100%" }}>Add to Cart</Button>
+                <Button
+                  className="btn-block"
+                  type="button"
+                  style={{ width: "100%" }}
+                  disabled={product.countInStock === 0}
+                >
+                  Add to Cart
+                </Button>
               </ListGroup.Item>
             </ListGroup>
-
 
           </Card>
         </Col>
