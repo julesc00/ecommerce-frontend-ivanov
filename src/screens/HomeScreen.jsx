@@ -20,6 +20,7 @@ const HomeScreen = () => {
 
   return (
     <div>
+
       <h1>Latest Products</h1>
       {loading ? <Loader />
         : error ? <Message variant='danger'>{error}</Message>
@@ -32,6 +33,7 @@ const HomeScreen = () => {
                 </Col>
               ))}
             </Row>
+
           </div>
       }
     </div>
